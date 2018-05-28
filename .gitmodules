@@ -1,0 +1,3 @@
+[submodule "blog/themes/min_night"]
+	path = blog/themes/min_night
+	url = https://github.com/nathancday/min_night.git
