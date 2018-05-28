@@ -29,27 +29,3 @@
 <!-- dismiss expanded navigation bar with click -->
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
 
-<!-- nightmode-toggle -->
-<script>
-$(document).ready(function(){
-    
-  var input = $('#night-mode-toggle');
-  var container = $('#bigbody');
-  var stat = $('#button-status');
-  
-  container.toggleClass(localStorage.toggled);
-  stat.bootstrapToggle(localStorage.button).change();
-  
-  input.on('click', function() {
-      if (localStorage.toggled != "-nightmode" ) {
-          container.toggleClass("-nightmode", true );
-          localStorage.toggled = "-nightmode";
-          localStorage.button = "on";
-       } else {
-          container.toggleClass("-nightmode", false );
-          localStorage.toggled = "";
-          localStorage.button = "off"
-       }
-  })
-});
-</script>
